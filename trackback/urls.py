@@ -2,10 +2,10 @@
 You may want to hook this URLconf into your Root-URLconf like this::
 
     url(r'^trackback/', include('trackback.urls')),
-    
+
 """
 
-from django.conf.urls.defaults import *
+from django.conf.urls import patterns, url
 from trackback.forms import TrackbackForm
 
 
